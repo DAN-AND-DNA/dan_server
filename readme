@@ -1,14 +1,21 @@
-作者: 
-    DNA
+一个非常早期的demo
 
-效忠组织:
-    
-
-依赖: 
-    谷歌 protobuf
-    linux 2.6.9+
+依赖:
+    protobuf
 
 使用:
+    cd dan_simple_server/src/proto/deps
+    获取protobuf 3.x c++ 并解压
+    mv 解压得的文件夹 protobuf
+    打开protobuf
+    ./autogen.sh
+    ./configure CXXFLAGS=-fPIC --prefix=[当前目录绝对路径]
+    make && make install
+
+    0. cd dan_simple_server
+        mkdir build
+        cd build;cmake ..
+
     1. 添加proto中的协议 
         1.1 说明一下规则: package名对应mod名  message名对应mod处理函数
     2. 运行gen_mod
@@ -16,3 +23,6 @@
     3. 修改mod中
         3.1 添加和修改消息处理函数
         3.2 消息id对应message
+
+例子:
+    请查看mod/mod_lulu和 proto/lulu.proto
