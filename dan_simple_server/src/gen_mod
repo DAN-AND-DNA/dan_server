@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ROOT=$(cd `dirname $0`;pwd)
+
+SCRIPT_ROOT=$ROOT/script
+
+sh $SCRIPT_ROOT/gen.sh
+

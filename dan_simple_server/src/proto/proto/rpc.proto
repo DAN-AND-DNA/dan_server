@@ -1,0 +1,16 @@
+syntax="proto3";
+
+//{package,rpc,2}.
+package rpc;
+
+//{message,hello,1}.
+message hello
+{
+}
+
+//{message,hello_r,2}.
+message hello_r
+{
+    int32 ret=1;
+    string result=2;
+}

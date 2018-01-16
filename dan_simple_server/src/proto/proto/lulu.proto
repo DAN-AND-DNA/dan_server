@@ -1,0 +1,19 @@
+syntax="proto3";
+
+//{package,lulu,1}.
+package lulu;
+
+//{message,ask_me,1}.
+message ask_me
+{
+    uint32 id=1;
+    repeated string name=2;
+}
+
+//{message,tell_you,2}.
+message tell_you
+{
+    uint32 ret=1;
+    string answer=2;
+}
+

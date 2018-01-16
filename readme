@@ -1,0 +1,18 @@
+作者: 
+    DNA
+
+效忠组织:
+    
+
+依赖: 
+    谷歌 protobuf
+    linux 2.6.9+
+
+使用:
+    1. 添加proto中的协议 
+        1.1 说明一下规则: package名对应mod名  message名对应mod处理函数
+    2. 运行gen_mod
+        2.1 自动生成和proto对应的消息
+    3. 修改mod中
+        3.1 添加和修改消息处理函数
+        3.2 消息id对应message
